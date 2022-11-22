@@ -11,7 +11,7 @@
 
 body {
   font-size: 10px;
-  background: rgb(149, 194, 215);
+  background: rgb(18, 128, 163);
 }
 
 a {
@@ -50,7 +50,7 @@ a {
   display: block;
   margin: 0;
   padding: 4px 10px;
-  background: rgb(96, 125, 139);
+  background: rgb(8, 197, 207);
   color: rgb(202, 238, 255);
   font-size: 18px;
 }
