@@ -40,6 +40,22 @@ function getThumbnailsArray() {
   return thumbnailArray;
 }
 
+function setRandomThumb(thumbnail) {
+  var thumbnails = getThumbnailsArray();
+  var randomThumb = thumbnails[Math.floor(Math.random() * thumbnails.length)];
+  randomThumb.setAttribute('data-image-url', thumbnail);
+}
+
+function resetThumbnails() {
+  var thumbnails = getThumbnailsArray();
+  
+  for (var i = 0; i < thumbnails.length; i += 1) {
+    var thumb = thumbnails[i];
+    var thumbLink = thumb.getAttribute('href');
+    thumb.setAttribute('data-image-url', thumbLink);
+  }
+}
+
 function initializeEvents() {
   'use strict';
   var thumbnails = getThumbnailsArray();
